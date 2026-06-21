@@ -1,5 +1,6 @@
 
-function fibonacci (n, arr = [0, 1, 1]) {
+function fibonacci (n, arr = [0, 1, 1]) {    
+    console.log("Printed Recursively");
     // base case if 0 & 1
    if (arr.length >= n) return arr;
     
@@ -7,7 +8,7 @@ function fibonacci (n, arr = [0, 1, 1]) {
     const nextNumber = arr[arr.length - 1] + arr[arr.length - 2];
     arr.push(nextNumber);
 
-    // recursively
+    // recursively    
     return fibonacci(n, arr);
 }
 
@@ -28,11 +29,9 @@ function fibLoop (n, arr = [0, 1]) {
         b = c;
     } return b
 }
-
-console.log("Printed Recursively");
-console.log(fibonacci(6));
+// console.log(fibonacci(6));
 console.log(fibonacci(8));
 
-console.log("Printed looply");
-console.log(fibonacci(6));
-console.log(fibonacci(8));
+// console.log("Printed looply");
+// console.log(fibonacci(6));
+// console.log(fibonacci(8));
